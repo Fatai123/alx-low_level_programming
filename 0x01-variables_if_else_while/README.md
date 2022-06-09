@@ -1,1 +1,1 @@
-0. This program will assign a random number to the variable n each time it is executed and then print the value.
+Readme for the project-0x01-variables_if_else_while
