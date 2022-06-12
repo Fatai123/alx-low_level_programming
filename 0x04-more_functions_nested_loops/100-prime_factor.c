@@ -1,26 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - program that prints out the highest prime
+ * main - program that prints out the highest prime factor
  *
  * Return: Always (0)
  */
 
-int main(void)
-{
-	int n, i, d;
+int main(void) {
+   long int n;
 
-	d = 50829601;
-	n = 150;
+   n= 612852475143;
+   long int factor = 2, maxFactor;
 
-	for (i = 3; i <= n; i = i + 2)
-	{
-		while (n % i == 0)
-		{
-			n = n / i;
-		}
-	}
-	printf("%d", d);
-	printf("\n");
-	return (0);
+   while(n!= 0) {
+      if(n % factor != 0)
+         factor = factor + 1;
+      else {
+         maxFactor = n;
+         n = n / factor;
+
+         if(n == 1) {
+            printf("%d",maxFactor);
+            break;
+         }
+      }
+   }
+   return 0;
 }

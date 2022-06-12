@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * mul - int mul(int a, int b)
@@ -11,5 +11,6 @@
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int h = a * b;
+	return (h);
 }

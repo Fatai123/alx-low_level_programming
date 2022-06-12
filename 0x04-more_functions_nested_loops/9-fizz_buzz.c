@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints nultplies of 3 or 5
+ * main - prints multplies of 3 or 5
  *
  * Description: multiples between 0 and 100
  * Return: Always(0)
@@ -11,7 +11,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 1; i <= 99; i++)
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 15 == 0)
 		{
@@ -30,6 +30,6 @@ int main(void)
 			printf("%i ", i);
 		}
 	}
-	printf("Buzz\n");
+	printf("\n");
 	return (0);
 }
